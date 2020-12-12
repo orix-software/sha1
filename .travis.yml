@@ -6,10 +6,6 @@ before_install:
     - sudo pip install --upgrade pip
     - sudo apt-get install mkdocs -y
     - echo Current branch ${TRAVIS_BRANCH}
-
-    - git clone https://github.com/oric-software/buildTestAndRelease.git
-    - cd buildTestAndRelease/ && sh make.sh
-    - cd ..
 after_success:
     - mkdir -p build/usr/share/man/
     - cp Makefile build/usr/src/sha1/
