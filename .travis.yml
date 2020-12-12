@@ -5,6 +5,9 @@ before_install:
     - sudo apt-get install -y doxygen graphviz pandoc
     - sudo pip install --upgrade pip
     - sudo apt-get install mkdocs -y
+    - git clone https://github.com/oric-software/buildTestAndRelease.git
+    - cd buildTestAndRelease/ && sh make.sh
+    - cd ..    
     - echo Current branch ${TRAVIS_BRANCH}
 after_success:
     - mkdir -p build/usr/share/man/
