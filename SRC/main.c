@@ -30,7 +30,7 @@ Orix version : Jede
 #include "sha1.h"
 
 /* Program Version */
-#define VERSION "2021.1"
+#define VERSION "v2021.1"
 
 /* Global Variables */
 int   command_undefined( char* argv[] );
@@ -91,7 +91,7 @@ int command_undefined( char* argv[] )
 {
     fprintf( stderr, "\n%s: Missing arguments.\n", argv[ 0 ] );
     if ( !quiet ) {
-        fprintf( outfile, "Try '%s -?' for further\ninformation.\n", argv[ 0 ] );
+        fprintf( outfile, "Try '%s -h' for further\ninformation.\n", argv[ 0 ] );
     }
     return ( 1 );
 }

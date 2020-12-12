@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/orix-software/sha1.svg?branch=master)](https://travis-ci.org/orix-software/sha1)
+
 cc65sha1
 ========
 
@@ -11,19 +13,20 @@ Not tested but should work with other 6502 based computers like:
   Apple ][+
   Commodor 64
   Commodor 128
+  Telestrat
 
 Usage: SHA1 <command> [options]
 
 Commands:
- /S        Generate SHA1 hash
- /T        Run all tests
- /V        Display version info
- /?        Display help info
+ -s        Generate SHA1 hash
+ -t        Run all tests
+ -v        Display version info
+ -h        Display help info
  
 Options:
- /I <file> Input file, defaults to STDIN
- /O <file> Output file, defaults to STDOUT
- /Q        Quiet mode, defaulted to off
+ -i <file> Input file, defaults to STDIN
+ -o <file> Output file, defaults to STDOUT
+ -q        Quiet mode, defaulted to off
  
 Program returns 0 if succesful and 1 if failed.
 
